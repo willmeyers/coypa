@@ -39,26 +39,3 @@ grant to whatever launched it.
 
 Without permission coypa still collects copies; only the hold-to-wheel trigger
 goes quiet, and ⌘V behaves exactly as normal.
-
-coypa runs as a background agent: no Dock icon, no ⌘-Tab entry.
-
-## Develop
-
-```sh
-cargo run --release            # run from source
-cargo test                     # unit tests
-COYPA_DEBUG=1 cargo run -r     # log every capture: kind, mime, size, timing
-COYPA_SELFTEST=1 cargo run -r  # headless check of the select→paste path
-```
-
-`COYPA_SELFTEST` is the fastest way to validate clipboard behaviour without a
-display. It builds a stack, pops a non-top item, and confirms the OS clipboard
-really holds it — covering both the eager (plain-text) and lazy (rich/image)
-write paths.
-
-Custom icon:
-
-```sh
-scripts/make-icon.sh            # from assets/icon.png
-scripts/make-icon.sh art.png    # from your own 1024×1024 PNG
-```
