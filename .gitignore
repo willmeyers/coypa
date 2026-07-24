@@ -1,0 +1,12 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Packaged app
+/dist/
+
+# Generated from assets/icon.png by scripts/make-icon.sh
+/assets/AppIcon.icns
+
+# macOS
+.DS_Store

@@ -1,0 +1,23 @@
+[package]
+name = "coypa"
+version = "0.1.0"
+edition = "2021"
+description = "coypa — an Apple-inspired clipboard stack, powered by SDL3"
+
+[[bin]]
+name = "coypa"
+path = "src/main.rs"
+
+[dependencies]
+sdl3 = { version = "0.18", features = ["use-pkg-config"] }
+fontdue = "0.9"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-graphics = "0.24"
+core-foundation = "0.10"
+libc = "0.2"

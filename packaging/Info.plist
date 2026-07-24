@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>coypa</string>
+    <key>CFBundleDisplayName</key>
+    <string>coypa</string>
+    <key>CFBundleIdentifier</key>
+    <string>dev.coypa.app</string>
+    <key>CFBundleExecutable</key>
+    <string>coypa</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleVersion</key>
+    <string>0.1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>11.0</string>
+
+    <!-- Background utility: no Dock icon, no ⌘-Tab entry. -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!-- Shown in the Accessibility permission prompt. coypa needs a keyboard
+         event tap to detect the paste key being held system-wide. -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>coypa needs Accessibility access to detect the paste shortcut being held.</string>
+</dict>
+</plist>
