@@ -6,10 +6,8 @@
 
 <p align="center">
   <b>coypa is a fun way to manage your clipboard.</b><br>
-  Copies stack and follow your cursor. Hold paste, they fan out
-  into a wheel. Pick one, and it pastes!
+  This is more of a proof of convept than anything. I saw something online that inspired this so I made it
 </p>
-
 <div align="center">
   <img src="docs/demo.gif" width="420" alt="coypa in use: chips trailing the cursor">
 </div>
